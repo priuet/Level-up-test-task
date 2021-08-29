@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test task Chertova</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet"></link>
+  <link href="carousel.css" rel="stylesheet">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <main class="container">
+  <!-- block 1 - Promo -->
+    <header>
+      <h1 class="text-center fw-bolder lh-lg h-100">LEVEL UP!</h1>
+    </header>
+
+    <div class="section-promo">
+      <div class="section-promo_content">
+        <div class="fullscreen-bg">
+            <video loop muted autoplay poster="media/videoframe.png" class="fullscreen-bg__video">
+            <source src="media/videoframe.webm" type="video/webm">
+            <source src="media/videoframe.mp4" type="video/mp4">
+            </video>
+            <img src="media/videoframe.png" class="video_img" alt="">
+        </div>
+
+        <div class="container overflow-hidden">
+        <div class="row justify-content-evenly">
+        <div class="col text-center">
+          <img src="media/prod.png" alt="" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="col header_promo-list">
+          <h3 class="list_header text-start">Why choose LEVEL UP?</h3>
+          <ol class="list-group list-group-numbered pros">
+            <li class="list-group-item">Высокий уровень безопасности.</li>
+            <li class="list-group-item">Lorem ipsum dolor, sit.</li>
+            <li class="list-group-item">Lorem, ipsum dolor sit amet consectetur.</li>
+          </ol>
+          <a href="#order"><button type="button" class="btn btn-lg header_btn col-6">ORDER NOW</button></a>
+        </div>
+        </div>
+        </div>
+      </div>
+    </div>
+<!--section promo end-->
+<!-- block 2 - Ingridients-->
+      <div class="container section-ingridients">
+      <div class="ingridients_content">
+        <h4 class="fs-1 text-center ingridients_header">What is it made of?</h4>
+            <div class="container d-flex align-items-center justify-content-center">
+              <div class="col-3 align-items-center justify-content-center ingridients_column">
+                <div class="col d-flex justify-content-center">
+                  <figure class="figure">
+                    <img src="media/herb1.png" class="figure-img img-fluid rounded-circle" alt="...">
+                    <figcaption class="figure-caption">Armeniaca vulgaris</figcaption>
+                  </figure>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <figure class="figure">
+                    <img src="media/herb2.png" class="figure-img img-fluid rounded-circle" alt="...">
+                    <figcaption class="figure-caption">Helichrysum arenarium</figcaption>
+                  </figure>
+                </div>
+                <div class="col  d-flex justify-content-center">
+                  <figure class="figure">
+                    <img src="media/herb3.png" class="figure-img img-fluid rounded-circle" alt="...">
+                    <figcaption class="figure-caption">Aralia mandshurica</figcaption>
+                  </figure>
+                </div>
+              </div>
+            <!--Product pic-->
+              <div class="col-4 d-flex justify-content-center ingridients_product_div">
+                <img src="media/prod.png" alt="" class="ingridients_product">
+              </div>
+            <!---Column 2-->  
+              <div class="col-3 justify-content-center align-self-center ingridients_column">
+                <div class="col d-flex justify-content-center">
+                  <figure class="figure">
+                    <img src="media/herb4.png" class="figure-img rounded-circle" alt="...">
+                    <figcaption class="figure-caption">Armeniaca vulgaris</figcaption>
+                  </figure>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <figure class="figure">
+                    <img src="media/herb5.png" class="figure-img rounded-circle" alt="...">
+                    <figcaption class="figure-caption">Helichrysum arenarium</figcaption>
+                  </figure>
+                </div>
+                <div class="col d-flex justify-content-center">
+                  <figure class="figure">
+                    <img src="media/herb1.png" class="figure-img rounded-circle" alt="...">
+                    <figcaption class="figure-caption">Aralia mandshurica</figcaption>
+                  </figure>
+                </div>
+              </div>
+          </div>
+          <!---order button-->
+          <div class="container order_button d-flex justify-content-center align-items-center">
+            <a href="#order"><button type="button" class="blink btn btn-lg header_btn">ORDER NOW</button></a>
+          </div> 
+      </div>
+      </div>
+
+
+
+
+  <!-- block 3 - Reviews-->
+  <div class="container">
+    <div class="reviews_content">
+      <div class="reviews_container">
+        <h4 class="text-center reviews_header">Our customers' reviews</h4>
+        <div id="carouselExampleCaptions" class="carousel slide carousel-dark  carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.fillmurray.com/460/600" class="img-fluid d-flex" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5>Bill</h5>
+        <p>Level Up made my dreams come true! Lorem ipsum dolor sit.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.placecage.com/400/600" class="d-flex text-center img-fluid" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5>Nicolas</h5>
+        <p>Such a great product!!! Lorem ipsum, dolor sit amet.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.stevensegallery.com/640/600" class="d-flex text-center img-fluid" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5>Steven</h5>
+        <p>Best pills I've ever tried! Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- block 4 - Promo -->
+    <div class="container">
+    <div class="promo_content">
+      <div class="container">
+        <div class="row justify-content-evenly">
+        <div class="col text-center doctor_pic">
+          <img src="media/doctor.png" alt="" class="img-fluid mx-auto d-block">
+        </div>
+        <div class="col promo-desc">
+          <h3 class="list_header text-start promo_why">Why choose LEVEL UP?</h3>
+          <ol class="list-group promo_content_list">
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, aperiam.</li>
+            <li class="list-group-item">Lorem ipsum dolor sit, amet, consectetur adipisicing Lorem ipsum dolor sit, amet consectetur. elit. Asperiores, quibusdam.</li>
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet. Fugit, doloremque!</li>
+            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, doloremque!</li>
+          </ol>
+        </div>
+        </div>
+        <a href="#order"><button type="button" class="btn btn-lg col-12">ORDER NOW</button></a>
+      </div>
+    </div>
+  </div>
+  <!-- block 5 Order--> 
+  <div class="container">
+    <div class="order_content">
+      <div class="container"><a name="order"></a>
+        <div class="row justify-content-evenly">
+          <h3 class="order_header text-center fw-bolder lh-lg h-100">LEVEL UP! ORDER NOW</h3>
+      <!--timer-->
+          <div class="timer container-fluid">
+            <div class="timer__items">
+              <div class="timer__item timer__minutes">00</div>
+              <div class="timer__item timer__seconds">00</div>
+            </div>
+          </div>
+      <!--timer finished-->
+          <div class="row d-flex text-center">
+            <div class="col-sm order_product">
+              <div class="order_product_photo">
+                <img src="media/prod.png" class="img-fluid order-img" alt="">
+              </div>
+              <div class="order_product_price">
+                <span class="order_price_old text-decoration-line-through ">$1999</span>
+                <span class="order_price_new fw-bolder blink">$99.99</span>
+              </div>
+            </div>
+        <!--order form-->      
+            <div class="col-sm">
+              <form action="" class="postcard">
+                <div class="form-row">
+                  <label for="name" class="form-label btn-outline-warning">Your full name</label><input type="text" id="name" class="form-control" required placeholder="type your name">
+                </div>
+                <div class="form-row">
+                  <label for="phone" class="form-label btn-outline-warning">Your phone number</label>
+                  <input type="number" id="phone" class="form-control" required placeholder="+7 12345678">
+                </div>
+                <div class="form-row">
+                <input type="submit" value="ORDER NOW" class="btn_submit btn-outline-warning">
+                </div>
+              </form>
+            </div>
+        <!--order form-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  </main>
+</body>
+</html>
